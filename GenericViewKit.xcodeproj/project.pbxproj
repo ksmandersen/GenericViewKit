@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		813CB98F1CF84AE000129D35 /* GenericViewKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 813CB98E1CF84AE000129D35 /* GenericViewKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81F7EBF01CFB61FA00B3ABB3 /* GenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F7EBEF1CFB61FA00B3ABB3 /* GenericView.swift */; };
+		81F7EBF21CFB630900B3ABB3 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F7EBF11CFB630900B3ABB3 /* GenericViewController.swift */; };
+		81F7EBF41CFB64A200B3ABB3 /* GenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F7EBF31CFB64A200B3ABB3 /* GenericTableViewCell.swift */; };
+		81F7EBF61CFB64D300B3ABB3 /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F7EBF51CFB64D300B3ABB3 /* ConfigurableView.swift */; };
+		81F7EBF81CFB653E00B3ABB3 /* GenericCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F7EBF71CFB653E00B3ABB3 /* GenericCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		813CB98B1CF84AE000129D35 /* GenericViewKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GenericViewKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		813CB98E1CF84AE000129D35 /* GenericViewKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericViewKit.h; sourceTree = "<group>"; };
 		813CB9901CF84AE000129D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81F7EBEF1CFB61FA00B3ABB3 /* GenericView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericView.swift; sourceTree = "<group>"; };
+		81F7EBF11CFB630900B3ABB3 /* GenericViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
+		81F7EBF31CFB64A200B3ABB3 /* GenericTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTableViewCell.swift; sourceTree = "<group>"; };
+		81F7EBF51CFB64D300B3ABB3 /* ConfigurableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
+		81F7EBF71CFB653E00B3ABB3 /* GenericCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +56,23 @@
 		813CB98D1CF84AE000129D35 /* GenericViewKit */ = {
 			isa = PBXGroup;
 			children = (
+				81F7EBEE1CFB61E200B3ABB3 /* Source */,
 				813CB98E1CF84AE000129D35 /* GenericViewKit.h */,
 				813CB9901CF84AE000129D35 /* Info.plist */,
 			);
 			path = GenericViewKit;
+			sourceTree = "<group>";
+		};
+		81F7EBEE1CFB61E200B3ABB3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				81F7EBEF1CFB61FA00B3ABB3 /* GenericView.swift */,
+				81F7EBF11CFB630900B3ABB3 /* GenericViewController.swift */,
+				81F7EBF31CFB64A200B3ABB3 /* GenericTableViewCell.swift */,
+				81F7EBF51CFB64D300B3ABB3 /* ConfigurableView.swift */,
+				81F7EBF71CFB653E00B3ABB3 /* GenericCollectionViewCell.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81F7EBF41CFB64A200B3ABB3 /* GenericTableViewCell.swift in Sources */,
+				81F7EBF61CFB64D300B3ABB3 /* ConfigurableView.swift in Sources */,
+				81F7EBF21CFB630900B3ABB3 /* GenericViewController.swift in Sources */,
+				81F7EBF81CFB653E00B3ABB3 /* GenericCollectionViewCell.swift in Sources */,
+				81F7EBF01CFB61FA00B3ABB3 /* GenericView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +259,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -242,6 +271,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.kristian.GenericViewKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -249,6 +279,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -282,6 +313,7 @@
 				813CB9951CF84AE000129D35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
