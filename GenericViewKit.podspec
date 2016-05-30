@@ -8,4 +8,8 @@ Pod::Spec.new do |spec|
   spec.source = { :git => 'https://github.com/ksmandersen/GenericViewKit.git', :tag => '1.0.0' }
   spec.source_files = 'GenericViewKit/Source/**/*.swift'
   spec.framework = 'UIKit'
+  spec.ios.deployment_target = '8.0'
+  spec.tvos.deployment_target = '9.0'
+  spec.requires_arc = true
+  spec.module_name = 'GenericViewKit'
 end
