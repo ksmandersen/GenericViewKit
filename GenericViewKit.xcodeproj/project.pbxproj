@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		813CB98F1CF84AE000129D35 /* GenericViewKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 813CB98E1CF84AE000129D35 /* GenericViewKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8183CA2C1D002A31009ECFF0 /* GenericViewKit tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 8183CA2B1D002A31009ECFF0 /* GenericViewKit tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8183CA311D002A67009ECFF0 /* GenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F7EBEF1CFB61FA00B3ABB3 /* GenericView.swift */; };
+		8183CA321D002A67009ECFF0 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F7EBF11CFB630900B3ABB3 /* GenericViewController.swift */; };
+		8183CA331D002A67009ECFF0 /* GenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F7EBF31CFB64A200B3ABB3 /* GenericTableViewCell.swift */; };
+		8183CA341D002A67009ECFF0 /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F7EBF51CFB64D300B3ABB3 /* ConfigurableView.swift */; };
+		8183CA351D002A67009ECFF0 /* GenericCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F7EBF71CFB653E00B3ABB3 /* GenericCollectionViewCell.swift */; };
 		81F7EBF01CFB61FA00B3ABB3 /* GenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F7EBEF1CFB61FA00B3ABB3 /* GenericView.swift */; };
 		81F7EBF21CFB630900B3ABB3 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F7EBF11CFB630900B3ABB3 /* GenericViewController.swift */; };
 		81F7EBF41CFB64A200B3ABB3 /* GenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F7EBF31CFB64A200B3ABB3 /* GenericTableViewCell.swift */; };
@@ -19,6 +25,9 @@
 		813CB98B1CF84AE000129D35 /* GenericViewKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GenericViewKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		813CB98E1CF84AE000129D35 /* GenericViewKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericViewKit.h; sourceTree = "<group>"; };
 		813CB9901CF84AE000129D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8183CA291D002A31009ECFF0 /* GenericViewKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GenericViewKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8183CA2B1D002A31009ECFF0 /* GenericViewKit tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GenericViewKit tvOS.h"; sourceTree = "<group>"; };
+		8183CA2D1D002A31009ECFF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81F7EBEF1CFB61FA00B3ABB3 /* GenericView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericView.swift; sourceTree = "<group>"; };
 		81F7EBF11CFB630900B3ABB3 /* GenericViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
 		81F7EBF31CFB64A200B3ABB3 /* GenericTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTableViewCell.swift; sourceTree = "<group>"; };
@@ -34,6 +43,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8183CA251D002A31009ECFF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				813CB98D1CF84AE000129D35 /* GenericViewKit */,
+				8183CA2A1D002A31009ECFF0 /* GenericViewKit tvOS */,
 				813CB98C1CF84AE000129D35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				813CB98B1CF84AE000129D35 /* GenericViewKit.framework */,
+				8183CA291D002A31009ECFF0 /* GenericViewKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +79,15 @@
 				813CB9901CF84AE000129D35 /* Info.plist */,
 			);
 			path = GenericViewKit;
+			sourceTree = "<group>";
+		};
+		8183CA2A1D002A31009ECFF0 /* GenericViewKit tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				8183CA2B1D002A31009ECFF0 /* GenericViewKit tvOS.h */,
+				8183CA2D1D002A31009ECFF0 /* Info.plist */,
+			);
+			path = "GenericViewKit tvOS";
 			sourceTree = "<group>";
 		};
 		81F7EBEE1CFB61E200B3ABB3 /* Source */ = {
@@ -86,6 +113,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8183CA261D002A31009ECFF0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8183CA2C1D002A31009ECFF0 /* GenericViewKit tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -107,6 +142,24 @@
 			productReference = 813CB98B1CF84AE000129D35 /* GenericViewKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		8183CA281D002A31009ECFF0 /* GenericViewKit tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8183CA301D002A31009ECFF0 /* Build configuration list for PBXNativeTarget "GenericViewKit tvOS" */;
+			buildPhases = (
+				8183CA241D002A31009ECFF0 /* Sources */,
+				8183CA251D002A31009ECFF0 /* Frameworks */,
+				8183CA261D002A31009ECFF0 /* Headers */,
+				8183CA271D002A31009ECFF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GenericViewKit tvOS";
+			productName = "GenericViewKit tvOS";
+			productReference = 8183CA291D002A31009ECFF0 /* GenericViewKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -117,6 +170,9 @@
 				ORGANIZATIONNAME = "Kristian Andersen";
 				TargetAttributes = {
 					813CB98A1CF84AE000129D35 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					8183CA281D002A31009ECFF0 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -134,12 +190,20 @@
 			projectRoot = "";
 			targets = (
 				813CB98A1CF84AE000129D35 /* GenericViewKit */,
+				8183CA281D002A31009ECFF0 /* GenericViewKit tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		813CB9891CF84AE000129D35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8183CA271D002A31009ECFF0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -158,6 +222,18 @@
 				81F7EBF21CFB630900B3ABB3 /* GenericViewController.swift in Sources */,
 				81F7EBF81CFB653E00B3ABB3 /* GenericCollectionViewCell.swift in Sources */,
 				81F7EBF01CFB61FA00B3ABB3 /* GenericView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8183CA241D002A31009ECFF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8183CA311D002A67009ECFF0 /* GenericView.swift in Sources */,
+				8183CA321D002A67009ECFF0 /* GenericViewController.swift in Sources */,
+				8183CA331D002A67009ECFF0 /* GenericTableViewCell.swift in Sources */,
+				8183CA341D002A67009ECFF0 /* ConfigurableView.swift in Sources */,
+				8183CA351D002A67009ECFF0 /* GenericCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +370,46 @@
 			};
 			name = Release;
 		};
+		8183CA2E1D002A31009ECFF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "GenericViewKit tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.kristian.GenericViewKit;
+				PRODUCT_NAME = GenericViewKit;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		8183CA2F1D002A31009ECFF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "GenericViewKit tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.kristian.GenericViewKit;
+				PRODUCT_NAME = GenericViewKit;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -314,6 +430,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		8183CA301D002A31009ECFF0 /* Build configuration list for PBXNativeTarget "GenericViewKit tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8183CA2E1D002A31009ECFF0 /* Debug */,
+				8183CA2F1D002A31009ECFF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
