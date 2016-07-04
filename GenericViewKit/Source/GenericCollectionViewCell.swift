@@ -9,6 +9,11 @@
 import UIKit
 
 public class GenericCollectionViewCell: UICollectionViewCell, ConfigurableView {
+    public override init(frame: CGRect) {
+        super.init(frame: CGRect.zero)
+        configureView()
+    }
+    
     public required init() {
         super.init(frame: CGRect.zero)
         configureView()

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8183CA281D002A31009ECFF0"
-               BuildableName = "GenericViewKit tvOS.framework"
+               BuildableName = "GenericViewKit.framework"
                BlueprintName = "GenericViewKit tvOS"
                ReferencedContainer = "container:GenericViewKit.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8183CA281D002A31009ECFF0"
-            BuildableName = "GenericViewKit tvOS.framework"
+            BuildableName = "GenericViewKit.framework"
             BlueprintName = "GenericViewKit tvOS"
             ReferencedContainer = "container:GenericViewKit.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8183CA281D002A31009ECFF0"
-            BuildableName = "GenericViewKit tvOS.framework"
+            BuildableName = "GenericViewKit.framework"
             BlueprintName = "GenericViewKit tvOS"
             ReferencedContainer = "container:GenericViewKit.xcodeproj">
          </BuildableReference>
