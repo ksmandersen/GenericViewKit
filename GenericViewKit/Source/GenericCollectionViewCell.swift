@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class GenericCollectionViewCell: UICollectionViewCell, ConfigurableView {
+open class GenericCollectionViewCell: UICollectionViewCell, ConfigurableView {
     public override init(frame: CGRect) {
         super.init(frame: CGRect.zero)
         configureView()
@@ -24,5 +24,5 @@ public class GenericCollectionViewCell: UICollectionViewCell, ConfigurableView {
         configureView()
     }
     
-    public func configureView() {}
+    open func configureView() {}
 }

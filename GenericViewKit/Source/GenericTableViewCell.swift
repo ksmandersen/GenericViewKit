@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class GenericTableViewCell: UITableViewCell, ConfigurableView {
+open class GenericTableViewCell: UITableViewCell, ConfigurableView {
     public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         configureView()
@@ -19,5 +19,5 @@ public class GenericTableViewCell: UITableViewCell, ConfigurableView {
         configureView()
     }
     
-    public func configureView() {}
+    open func configureView() {}
 }

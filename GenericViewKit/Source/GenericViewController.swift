@@ -8,8 +8,8 @@
 
 import UIKit
 
-public class GenericViewController<View: GenericView>: UIViewController {
-    public var contentView: View {
+open class GenericViewController<View: GenericView>: UIViewController {
+    open var contentView: View {
         return view as! View
     }
     
@@ -21,7 +21,7 @@ public class GenericViewController<View: GenericView>: UIViewController {
         super.init(coder: coder)
     }
     
-    public override func loadView() {
+    open override func loadView() {
         view = View()
     }
 }

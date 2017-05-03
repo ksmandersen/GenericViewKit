@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class GenericView: UIView, ConfigurableView {
+open class GenericView: UIView, ConfigurableView {
     public required init() {
         super.init(frame: CGRect.zero)
         configureView()
@@ -19,5 +19,5 @@ public class GenericView: UIView, ConfigurableView {
         configureView()
     }
     
-    public func configureView() {}
+    open func configureView() {}
 }
